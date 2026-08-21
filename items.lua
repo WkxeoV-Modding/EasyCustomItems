@@ -11,7 +11,7 @@ end
 
 --function to check the items name
 function categoryCheck(item)
-	local itemIdText = string.sub(item, 11)
+	local itemIdText = string.sub(item, 10)
 	local quickArray = models.items.Item:getChildren()
 	for i = 1, #quickArray do
 		if itemIdText == quickArray[i]:getName() then
